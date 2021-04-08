@@ -1,0 +1,45 @@
+###Create a question
+POST http://127.0.0.1:5000/api/questions
+Content-Type: application/json
+
+{
+    "name": "MalcolmReyes",
+    "text": "hello underworld",
+    "repo": "no repo",
+    "live": "true"
+}
+
+###
+POST http://127.0.0.1:5000/api/questions 
+content-type: application/json
+
+{
+    "name": "jone Reyes",
+    "text": "help world",
+    "repo": "no repo bro",
+    "live": "true = false"
+}
+
+###
+
+POST http://127.0.0.1:5000/api/questions
+content-type: application/json
+
+{
+    "name": "carlos Reyes",
+    "text": "fight me",
+    "repo": "lol",
+    "live": "false"
+}
+###
+GET http://127.0.0.1:5000/api/questions
+###
+DELETE http://127.0.0.1:5000/api/questions/06f75e0eeed9b2e145d443
+
+###
+PATCH http://127.0.0.1:5000/api/questions/606f75dbeeed9b2e145d443b
+content-type: application/json
+
+{
+    "name": "carlos Reyes",
+}
